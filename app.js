@@ -21,8 +21,6 @@ function getData() {
       author.forEach((lists) => {
         btns.forEach((btn) => {
           btn.addEventListener("click", (e) => {
-            console.log(e.currentTarget);
-
             const text = e.currentTarget.innerText;
             if (text === "Name") {
               contentText.innerHTML = `<img src="${lists.picture.large}" alt="${lists.img}" class="img">
